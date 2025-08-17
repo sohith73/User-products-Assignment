@@ -448,7 +448,7 @@ body {
 .product-img-wrap img {
      max-height: 90%;
      max-width: 90%;
-     object-fit: contain;
+     object-fit: cover;
      transition: transform 0.3s ease;
 }
 
@@ -713,7 +713,7 @@ body {
      }
 
      .product-img-wrap {
-          height: 140px;
+          aspect-ratio: 3/4;
      }
 
      .list-wrap {
