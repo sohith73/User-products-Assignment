@@ -20,14 +20,23 @@ export default function UserPostsModal() {
         >
             {isLoading && <Loader label="Loading posts..." />}
             {isError && <ErrorBox message="Failed to load posts" />}
-            <div className="posts">
-                {data?.map((p) => (
-                    <article key={p.id} className="post">
-                        <h3>{p.title}</h3>
-                        <p>{p.body}</p>
-                    </article>
-                ))}
-            </div>
+
+            {data && (
+                <div className="posts">
+                    {data.map((p) => (
+                        <article key={p.id} className="post">
+                            <h3>{p.title}</h3>
+                            <p>{p.body}</p>
+                        </article>
+                    ))}
+
+                    <div style={{ marginTop: "12px", textAlign: "right" }}>
+                        <button className="btn-primary" onClick={onClose}>
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </Modal>
     );
 }
