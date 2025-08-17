@@ -21,7 +21,7 @@ function UserCardBase({ user, style }: Props) {
             <div className="user-info">
                 <div className="user-name">{user.name}</div>
                 <div className="user-sub">
-                    <span>@{user.username}</span>
+                    {/* <span className="hidden lg:inline">@{user.username}</span> */}
                     <span>• {user.email}</span>
                     <span>• {user.phone}</span>
                 </div>

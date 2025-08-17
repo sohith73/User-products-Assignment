@@ -186,6 +186,7 @@ body {
 .list-wrap::-webkit-scrollbar {
      display: none;
 }
+
 ::-webkit-scrollbar {
      width: 0;
      height: 0;
@@ -269,6 +270,8 @@ body {
      gap: var(--spacing-sm);
      padding: var(--spacing-xs) var(--spacing-sm);
 }
+
+
 
 .spinner {
      width: 18px;
@@ -623,6 +626,9 @@ body {
      .grid {
           grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
      }
+          .username {
+               display: inline;
+          }
 }
 
 @media (max-width: 768px) {
@@ -784,4 +790,3 @@ body {
 .list-wrap::-webkit-scrollbar-thumb:hover {
      background: var(--accent-700);
 }
-
